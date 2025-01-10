@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import ChatComponent from './ChatComponent';
 import Navbar from './NavBar';
 import Link from 'next/link';
+import Popup from './Popup';
 
 const icons = [
    { img: 'ico_1', url: 'https://t.me' },
@@ -14,7 +15,8 @@ const icons = [
 
 export default function Home() {
    return (
-      <div className='flex items-center justify-center'>
+      <div className='flex items-center justify-center font-[Delicious]'>
+         <Popup />
          <div className='w-full max-w-[1280px] font-[edo] flex flex-col items-center justify-center'>
             <Navbar />
             <Image
@@ -134,7 +136,8 @@ export default function Home() {
                      id='how-to-buy'
                      className='text-2xl md:text-3xl font-bold text-white'
                   >
-                     How to buy <span className='text-[40px] font-[Delicious]'>$</span>
+                     How to buy{' '}
+                     <span className='text-[40px] font-[Delicious]'>$</span>
                      MANGAI
                   </h2>
                   <p className='font-[Delicious] text-[18px] text-white mt-4  font-normal'>
