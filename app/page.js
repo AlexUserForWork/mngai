@@ -6,10 +6,10 @@ import Navbar from './NavBar';
 import Link from 'next/link';
 
 const icons = [
-   { img: 'ico_1', url: '' },
-   { img: 'ico_2', url: '' },
-   { img: 'ico_3', url: '' },
-   { img: 'ico_4', url: '' }
+   { img: 'ico_1', url: 'https://t.me' },
+   { img: 'ico_2', url: 'https://x.com' },
+   { img: 'ico_3', url: 'https://www.dextools.io/app/en/' },
+   { img: 'ico_4', url: 'https://dexscreener.com/solana/' }
 ];
 
 export default function Home() {
@@ -41,17 +41,18 @@ export default function Home() {
                      HENTAI
                   </p>
 
-                  <div className='flex gap-2'>
+                  <div className='flex gap-2 items-center justify-center mt-4'>
                      {icons.map((icon, index) => (
-                        <Image
-                           key={index}
-                           src={'/images/' + icon.img + '.png'}
-                           alt={icon.img}
-                           className='w-full h-full'
-                           priority
-                           width={60}
-                           height={60}
-                        />
+                        <Link key={index} target='_blank' href={icon.url}>
+                           <Image
+                              src={'/images/' + icon.img + '.png'}
+                              alt={icon.img}
+                              className='w-full h-full cursor-pointer'
+                              priority
+                              width={60}
+                              height={60}
+                           />
+                        </Link>
                      ))}
                   </div>
                </div>
@@ -68,7 +69,7 @@ export default function Home() {
                </p>
             </div>
 
-            <div className='flex flex-col gap-8 mt-24'>
+            <div id='about' className='flex flex-col gap-8 mt-24'>
                <p className='text-[36px] flex items-center justify-center leading-none'>
                   About
                   <span className='pl-2 text-[48px] font-[Delicious] flex items-center relative top-[-2px]'>
@@ -79,10 +80,10 @@ export default function Home() {
             </div>
             <div className='flex flex-col md:flex-row w-full mt-4'>
                <div className='w-full md:w-1/2 flex flex-col  p-4'>
-                  <div className='bg-[#022405] border border-[#03cd1b] rounded p-4 w-full max-w-[90%] text-white break-words h-[350px]'>
+                  <div className='mx-auto md:mx-0 bg-[#022405] border border-[#03cd1b] rounded p-4 w-full max-w-[90%] text-white break-words h-[350px]'>
                      123123123123123123123123123123123123123123123123123123123123123123123123
                   </div>
-                  <div className='mt-8'>
+                  <div className='mt-8 mx-auto md:mx-0'>
                      <Link
                         href='https://raydium.io/'
                         target='_blank'
@@ -105,7 +106,10 @@ export default function Home() {
                </div>
             </div>
 
-            <div className='mt-24 flex flex-col items-center justify-center'>
+            <div
+               id='tokenomics'
+               className='mt-24 flex flex-col items-center justify-center'
+            >
                <h2 className='text-[36px]'>Tokenomics</h2>
 
                <div className='flex flex-col lg:flex-row gap-8 mt-4'>
@@ -117,7 +121,7 @@ export default function Home() {
                      width={600}
                      height={600}
                   />
-                  <div className='bg-[#022405] border border-[#03cd1b] rounded p-4 w-full max-w-[90%] text-white break-words h-[350px]'>
+                  <div className='mx-auto bg-[#022405] border border-[#03cd1b] rounded p-4 w-full max-w-[90%] text-white break-words h-[350px]'>
                      123123123123123123123123123123123123123123123123123123123123123123123123
                   </div>
                </div>
@@ -130,40 +134,40 @@ export default function Home() {
                      id='how-to-buy'
                      className='text-2xl md:text-3xl font-bold text-white'
                   >
-                     How to buy <span className='text-green-400'>$MANGAI</span>
+                     How to buy <span className='text-[40px] font-[Delicious]'>$</span>
+                     MANGAI
                   </h2>
-                  <p className='text-sm text-white mt-4 leading-relaxed font-normal'>
-                     Setting Up a Ethereum Wallet: First, choose and install an
-                     Ethereum-compatible wallet such as Metamask or Trustwallet.
-                     Once installed, create your wallet and securely store your
-                     private key or seed phrase.
+                  <p className='font-[Delicious] text-[18px] text-white mt-4  font-normal'>
+                     Setting Up a Phantom Wallet: First, choose and install the
+                     Phantom wallet. Once installed, create your wallet and
+                     securely store your private key or seed phrase.
                      <br />
                      <br />
-                     Acquiring Ethereum (ETH): Purchase ETH from a
-                     cryptocurrency exchange like Coinbase or Binance. After
-                     purchasing, transfer the ETH to your Ethereum wallet.
+                     Acquiring Solana (SOL): Purchase SOL from a cryptocurrency
+                     exchange like Coinbase or Binance. After purchasing,
+                     transfer the SOL to your Solana wallet.
                      <br />
                      <br />
-                     Exchanging for $HENTAI on Uniswap: Visit Uniswap and
-                     connect your Ethereum wallet. Use the swap or trade feature
-                     on Uniswap to exchange your ETH for $HENTAI tokens.
+                     Exchanging for $HENTAI on Raydium: Visit Raydium and
+                     connect your Phantom wallet. Use the swap feature on
+                     Raydium to exchange your SOL for $HENTAI tokens.
                   </p>
 
                   {/* Кнопки */}
                   <div className='mt-6 flex flex-col sm:flex-row gap-4 justify-center'>
                      <Link
-                        href='https://trustwallet.com/'
+                        href='https://phantom.app/'
                         target='_blank'
                         className='bg-[#079117] text-white px-10 py-2 hover:bg-green-600 transition'
                      >
-                        Get Trustwallet
+                        Get Phantom
                      </Link>
                      <Link
-                        href='https://metamask.io/'
+                        href='https://raydium.io/'
                         target='_blank'
                         className='bg-[#079117] text-white px-10 py-2 hover:bg-green-600 transition'
                      >
-                        Get Metamask
+                        Go Raydimu
                      </Link>
                   </div>
                </div>
@@ -180,6 +184,8 @@ export default function Home() {
                   />
                </div>
             </div>
+
+            <div className='mt-24'>FOOTER TODO !!!</div>
          </div>
       </div>
    );
