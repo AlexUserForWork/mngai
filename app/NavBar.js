@@ -8,19 +8,18 @@ export default function Navbar() {
    const [menuOpen, setMenuOpen] = useState(false);
 
    return (
-      <header className='max-w-[800px] w-full h-full flex justify-between items-center mx-auto px-4 md:px-6 border border-[#03cd1b]'>
+      <header className='w-full h-full flex justify-between items-center mx-auto px-4 md:px-6 border border-[#03cd1b]'>
          <Link href='/' className='w-15'>
             <Image
                src='/images/11.jpg'
                alt='Logo'
-               width={60}
-               height={60}
-               className='w-auto h-auto'
+               width={80}
+               height={80}
                priority
             />
          </Link>
 
-         <nav className='hidden md:flex gap-6'>
+         <nav className='hidden md:flex gap-6 text-[24px]'>
             <Link href='#about' className='text-white hover:text-gray-300'>
                About
             </Link>
@@ -39,11 +38,11 @@ export default function Navbar() {
             </Link>
          </nav>
 
-         <div className='flex items-center gap-4'>
+         <div className='flex items-center gap-4 text-[24px]'>
             <Link
                href='https://raydium.io/'
                target='_blank'
-               className='bg-[#079117] text-white px-6 py-.5 hover:bg-[green] transition'
+               className='bg-[#079117] text-white px-10 py-.5 hover:bg-[green] transition'
             >
                Buy $MANGAI
             </Link>

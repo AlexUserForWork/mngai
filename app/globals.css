@@ -10,6 +10,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Delicious';
+  src: url('/fonts/DeliciousHandrawn-Regular.ttf') format('truetype');
+  font-weight: 400 900;
+  font-style: normal;
+}
+
 :root {
   --background: #171717;
   --foreground: #171717;

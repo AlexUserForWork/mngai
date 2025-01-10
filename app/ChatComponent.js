@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
+import Image from 'next/image';
 
-const ChatComponent = ({ setIsChatOpen }) => {
+const ChatComponent = () => {
    const [message, setMessage] = useState('');
    const [chatHistory, setChatHistory] = useState([]);
    const chatContainerRef = useRef(null);
@@ -37,13 +38,14 @@ const ChatComponent = ({ setIsChatOpen }) => {
          return updatedHistory;
       });
 
-      const botTypingMessage = { message: 'Loomo is typing...', isUser: false };
+      const botTypingMessage = { message: 'Bot is typing...', isUser: false };
       setChatHistory((prevHistory) => [...prevHistory, botTypingMessage]);
 
       setMessage('');
 
       try {
          const backendUrl = 'https://aichat-backend-79ip.onrender.com/chat';
+         // const backendUrl = 'http://localhost:4000/chat'
          const response = await fetch(backendUrl, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -84,22 +86,18 @@ const ChatComponent = ({ setIsChatOpen }) => {
    };
 
    return (
-      <div className='text-card-foreground shadow-sm bg-[#1a2e1a] bg-opacity-80 border-0 p-6'>
-         <div className='flex justify-between items-center mb-4'>
-            <h2 className='text-[#4AFF91] text-2xl font-bold'>
-               Talk with Loomo
-            </h2>
-            <button
-               onClick={() => setIsChatOpen(false)}
-               className='h-10 w-10 text-[#4AFF91]'
-            >
-               &#9660;
-            </button>
-         </div>
-
-         {/* Контейнер чата */}
+      <div
+         className='shadow-sm bg-[#1a1a1a] bg-opacity-90 border border-[#157e05] rounded-lg p-4 w-[800px] h-[600px] flex flex-col'
+         style={{
+            backgroundImage:
+               "url('/images/Digital_rain_animation_small_letters_shine.gif')",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+         }}
+      >
+         {/* Чат */}
          <div
-            className='h-[300px] overflow-y-auto mb-4 space-y-4 scrollbar-thin scrollbar-thumb-[#4AFF91] scrollbar-track-[#1a2e1a]'
+            className='flex-1 overflow-y-auto mb-4 space-y-4 scrollbar-thin scrollbar-thumb-[#4AFF91] scrollbar-track-[#1a2a1a] text-white'
             ref={chatContainerRef}
          >
             {chatHistory.map((entry, index) => (
@@ -116,15 +114,13 @@ const ChatComponent = ({ setIsChatOpen }) => {
                      </div>
                   ) : (
                      <div className='w-10 h-10 rounded-full overflow-hidden relative flex-shrink-0'>
-                        <img
-                           alt='Zoog'
+                        <Image
+                           alt='Bot'
                            loading='lazy'
-                           width='40'
-                           height='40'
-                           decoding='async'
+                           width={40}
+                           height={40}
                            className='object-cover'
-                           src='https://hebbkx1anhila5yf.public.blob.vercel-storage.com/file_151334019-jjutOHX3Pw7SNIvDnOLvHnfvn9XrXM.webp'
-                           style={{ color: 'transparent' }}
+                           src='/images/11.jpg'
                         />
                      </div>
                   )}
@@ -141,15 +137,17 @@ const ChatComponent = ({ setIsChatOpen }) => {
             ))}
          </div>
 
-         {/* Форма отправки сообщения */}
-         <form className='flex space-x-2' onSubmit={handleSendMessage}>
+         {/* Поле ввода */}
+         <form className='flex space-x-2 font-[edo]' onSubmit={handleSendMessage}>
             <input
-               className='flex-grow h-10 border px-3 py-2 bg-[#243524] border-[#4AFF91] text-white'
-               placeholder='Ask Loomo something...'
+               className='flex-grow h-10 border px-3 py-2 bg-[#2a2a2a] border-[#157e05] text-white rounded'
+               placeholder='Enter your message...'
                value={message}
                onChange={(e) => setMessage(e.target.value)}
             />
-            <button className='h-10 px-4 bg-[#4AFF91] text-black'>Send</button>
+            <button className='h-10 px-4 bg-[#157e05] text-white rounded'>
+               Send
+            </button>
          </form>
       </div>
    );
