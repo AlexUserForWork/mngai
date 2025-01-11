@@ -57,7 +57,6 @@ export default function Home() {
                      <span className='text-[36px] font-[Delicious] flex items-center relative top-[-2px]'>
                         $
                      </span> */}
-                    
                   </p>
 
                   <div className='flex gap-2 items-center justify-center mt-4'>
@@ -82,8 +81,8 @@ export default function Home() {
                <ChatComponent />
             </div>
 
-            <div className='bg-[#022405] w-[500px] h-[50px] mt-16 flex items-center justify-center text-center'>
-               <p className='text-[18px]'>
+            <div className='bg-[#022405] w-full md:w-[500px] h-[50px] mt-16 flex items-center justify-center text-center'>
+               <p className='text-[15px] md:text-[18px]'>
                   CA: frcfshgo8ytbuden2yov1uljzmq9rgjc9vtgy5gltgqe
                </p>
             </div>
@@ -94,21 +93,31 @@ export default function Home() {
                   {/* <span className='pl-2 text-[48px] font-[Delicious] flex items-center relative top-[-2px]'>
                      $
                   </span> */}
-                  
                </p>
             </div>
             <div className='flex flex-col md:flex-row w-full mt-4'>
                <div className='w-full md:w-1/2 flex flex-col  p-4'>
-                  <div className='mx-auto md:mx-0 bg-[#022405] border border-[#03cd1b] rounded p-4 w-full max-w-[90%] text-white break-words h-[350px]'>
-                     123123123123123123123123123123123123123123123123123123123123123123123123
+                  <div className='text-[3vw] sm:text-[15px] lg:text-[18px] xl:text-[20px] mx-auto md:mx-0 bg-[#022405] border border-[#03cd1b] rounded p-4 w-full max-w-[90%] text-white break-words h-[350px]'>
+                     MangAI is a cultural initiative offering a delicate
+                     introduction to Japanese culture through the image of a
+                     refined, playful young heroine and intelligent AI agents.
+                     The project employs AI to adapt narratives and provide
+                     personalized insights, fostering a deeper understanding of
+                     Japanese traditions and contemporary trends. Special
+                     emphasis is placed on psychological support and
+                     self-discovery: through metaphorical stories and
+                     interactive scenarios, MangAI offers meditation and
+                     relaxation techniques based on Japanese practices,
+                     promoting emotional well-being and harmonious personal
+                     development.
                   </div>
                   <div className='mt-8 mx-auto md:mx-0'>
                      <Link
                         href='https://raydium.io/'
                         target='_blank'
-                        className="relative bg-[#079117] text-white px-10 py-0.5 transition border-2 border-transparent 
+                        className='relative bg-[#079117] text-white px-10 py-0.5 transition border-2 border-transparent 
                         before:absolute before:inset-0 before:border-2 before:border-[#00c817] before:blur-sm before:opacity-0 
-                        hover:before:opacity-100 hover:bg-[#00c817]"
+                        hover:before:opacity-100 hover:bg-[#00c817]'
                      >
                         Buy $MANGAI
                      </Link>
@@ -154,7 +163,6 @@ export default function Home() {
                   >
                      How to buy $MANGAI
                      {/* <span className='text-[40px]'>$</span> */}
-                   
                   </h2>
                   <p className='text-[23px] text-white mt-4  font-normal'>
                      Setting Up a Phantom Wallet: First, choose and install the
@@ -177,18 +185,18 @@ export default function Home() {
                      <Link
                         href='https://phantom.app/'
                         target='_blank'
-                        className="relative bg-[#079117] text-white px-10 py-0.5 transition border-2 border-transparent 
+                        className='relative bg-[#079117] text-white px-10 py-0.5 transition border-2 border-transparent 
                         before:absolute before:inset-0 before:border-2 before:border-[#00c817] before:blur-sm before:opacity-0 
-                        hover:before:opacity-100 hover:bg-[#00c817]"
+                        hover:before:opacity-100 hover:bg-[#00c817]'
                      >
                         Get Phantom
                      </Link>
                      <Link
                         href='https://raydium.io/'
                         target='_blank'
-                        className="relative bg-[#079117] text-white px-10 py-0.5 transition border-2 border-transparent 
+                        className='relative bg-[#079117] text-white px-10 py-0.5 transition border-2 border-transparent 
                         before:absolute before:inset-0 before:border-2 before:border-[#00c817] before:blur-sm before:opacity-0 
-                        hover:before:opacity-100 hover:bg-[#00c817]"
+                        hover:before:opacity-100 hover:bg-[#00c817]'
                      >
                         Go Raydium
                      </Link>

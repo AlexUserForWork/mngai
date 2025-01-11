@@ -18,7 +18,7 @@ const Popup = ({ setIsPlayMusic }) => {
                        transition-all duration-[200ms] ease-in-out hover:scale-x-[2] hover:scale-y-[1.2] hover:animate-bubble'
                   onClick={handleClick}
                >
-                  <h1 className='text-5xl font-extrabold'>
+                  <h1 className='text-2xl md:text-5xl font-extrabold'>
                      CLICK TO ENTER $MANGAI
                   </h1>
                </div>
