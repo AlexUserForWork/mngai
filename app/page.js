@@ -33,7 +33,7 @@ export default function Home() {
             setIsPlayMusic={setIsPlayMusic}
             audio={audio}
          />
-         <Popup setIsPlayMusic={setIsPlayMusic}/>
+         <Popup setIsPlayMusic={setIsPlayMusic} />
          <div className='w-full max-w-[1280px] font-[edo] flex flex-col items-center justify-center'>
             <Navbar />
             <Image
@@ -125,10 +125,7 @@ export default function Home() {
                </div>
             </div>
 
-            <div
-               id='tokenomics'
-               className='w-full mt-24 flex flex-col '
-            >
+            <div id='tokenomics' className='w-full mt-24 flex flex-col '>
                <h2 className='text-[36px] block mx-auto'>Tokenomics</h2>
 
                <div className='flex flex-col lg:flex-row gap-8 mt-4'>
@@ -146,9 +143,9 @@ export default function Home() {
                </div>
             </div>
 
-            <div className='mt-24 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center text-center max-w-4xl mx-auto px-4'>
+            <div className='w-full mt-24 flex flex-col lg:flex-row gap-4'>
                {/* Левая часть с текстом */}
-               <div>
+               <div className='w-full lg:w-1/2 text-center p-6 mx-auto lg:mx-0'>
                   <h2
                      id='how-to-buy'
                      className='text-2xl md:text-3xl font-bold text-white'
@@ -187,19 +184,18 @@ export default function Home() {
                         target='_blank'
                         className='bg-[#079117] text-white px-10 py-2 hover:bg-green-600 transition'
                      >
-                        Go Raydimu
+                        Go Raydium
                      </Link>
                   </div>
                </div>
 
-               {/* Правая часть с изображением */}
                <div className='flex justify-center'>
                   <Image
                      src='/images/4.jpg'
-                     alt='Ethereum Wallet Setup'
-                     width={500}
-                     height={350}
-                     className='rounded-lg shadow-lg object-cover w-full max-w-xs md:max-w-sm'
+                     alt='Wallet Setup'
+                     width={1000}
+                     height={1000}
+                     className='rounded-lg shadow-lg object-cover w-[500px] h-full'
                      priority
                   />
                </div>
