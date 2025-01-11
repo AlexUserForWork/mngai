@@ -127,9 +127,9 @@ export default function Home() {
 
             <div
                id='tokenomics'
-               className='mt-24 flex flex-col items-center justify-center'
+               className='w-full mt-24 flex flex-col '
             >
-               <h2 className='text-[36px]'>Tokenomics</h2>
+               <h2 className='text-[36px] block mx-auto'>Tokenomics</h2>
 
                <div className='flex flex-col lg:flex-row gap-8 mt-4'>
                   <Image
