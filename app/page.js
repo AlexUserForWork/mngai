@@ -11,8 +11,8 @@ import { Footer } from './Footer';
 export const icons = [
    { img: 'ico_1', url: 'https://t.me/AgentMangAI' },
    { img: 'ico_2', url: 'https://x.com/AgentMangAI' },
-   { img: 'ico_3', url: 'https://www.dextools.io/app/en/' },
-   { img: 'ico_4', url: 'https://dexscreener.com/solana/' }
+   { img: 'ico_3', url: 'https://www.dextools.io/app/en/solana/pair-explorer/CFPKM1nZyhiiuGT63NB4QhMALxetqUvoUuaJ6GrH6WHi' },
+   { img: 'ico_4', url: 'https://dexscreener.com/solana/rcRybMHUKMQNDHZpJeXJCAMkd5XkuHHFWgjDi53pump' }
 ];
 
 export default function Home() {
@@ -89,7 +89,7 @@ export default function Home() {
 
             <div className='bg-[#079117] w-full md:w-[550px] h-[50px] mt-16 flex items-center justify-center text-center'>
                <p className='text-[15px] md:text-[27px]'>
-                  frcfshgo8ytbuden2yov1uljzmq9rgjc9vtgy5gltgqe
+                  rcRybMHUKMQNDHZpJeXJCAMkd5XkuHHFWgjDi53pump
                </p>
             </div>
 
