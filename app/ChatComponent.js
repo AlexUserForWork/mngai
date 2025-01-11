@@ -90,7 +90,7 @@ const ChatComponent = () => {
          className='shadow-sm bg-[#1a1a1a] bg-opacity-90 border border-[#157e05] rounded-lg p-4 w-full md:w-[800px] h-[600px] flex flex-col'
          style={{
             backgroundImage:
-               "url('/images/Digital_rain_animation_small_letters_shine.gif')",
+               "url('/images/forChat.gif')",
             backgroundSize: 'cover',
             backgroundPosition: 'center'
          }}
