@@ -38,7 +38,7 @@ const ChatComponent = () => {
          return updatedHistory;
       });
 
-      const botTypingMessage = { message: 'Bot is typing...', isUser: false };
+      const botTypingMessage = { message: 'Kiota is typing...', isUser: false };
       setChatHistory((prevHistory) => [...prevHistory, botTypingMessage]);
 
       setMessage('');
@@ -127,8 +127,9 @@ const ChatComponent = () => {
 
                   {/* Сообщение */}
                   <div
-                     className={`flex-1 break-words whitespace-pre-wrap [overflow-wrap:anywhere] ${
-                        entry.isUser ? 'text-white' : 'text-[#4AFF91]'
+                     className={`flex-1 break-words whitespace-pre-wrap [overflow-wrap:anywhere] border rounded  ${
+                        entry.isUser ? "text-white border-[#FFFFFF] px-2 z-20 bg-gray-800 bg-opacity-25 z-50"
+                        : 'text-[#4AFF91] border-[#4AFF91] px-2 z-20 bg-green-800 bg-opacity-25 z-50'
                      }`}
                   >
                      {entry.message}

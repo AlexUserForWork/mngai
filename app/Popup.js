@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react';
+import ScrambleText from './TextAnim';
 
 const Popup = ({ setIsPlayMusic }) => {
    const [isOpen, setIsOpen] = useState(true);
@@ -14,13 +15,15 @@ const Popup = ({ setIsPlayMusic }) => {
             <div className='text-center'>
                {/* Кнопка для взаимодействия */}
                <div
-                  className='cursor-pointer bg-[#157e05] border-4 border-white rounded-[1rem] py-3 px-6 mt-12 text-white flex justify-center items-center
-                       transition-all duration-[200ms] ease-in-out hover:scale-x-[2] hover:scale-y-[1.2] hover:animate-bubble'
+                  className="relative bg-[#079117] text-white px-10 py-0.5 transition border-2 border-transparent 
+                  before:absolute before:inset-0 before:border-2 before:border-[#00c817] before:blur-sm before:opacity-0 
+                  hover:before:opacity-100 hover:bg-[#00c817] cursor-pointer"
                   onClick={handleClick}
                >
-                  <h1 className='text-2xl md:text-5xl font-extrabold'>
+                  <ScrambleText />
+                  {/* <h1 className='text-anim text-2xl md:text-5xl font-extrabold'>
                      CLICK TO ENTER $MANGAI
-                  </h1>
+                  </h1> */}
                </div>
             </div>
          </div>

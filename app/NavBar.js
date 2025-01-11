@@ -19,7 +19,7 @@ export default function Navbar() {
             />
          </Link>
 
-         <nav className='hidden md:flex gap-6 text-[24px]'>
+         <nav className='hidden md:flex gap-6 text-[32px]'>
             <Link href='#about' className='text-white hover:text-gray-300'>
                About
             </Link>

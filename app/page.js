@@ -81,9 +81,9 @@ export default function Home() {
                <ChatComponent />
             </div>
 
-            <div className='bg-[#022405] w-full md:w-[500px] h-[50px] mt-16 flex items-center justify-center text-center'>
-               <p className='text-[15px] md:text-[18px]'>
-                  CA: frcfshgo8ytbuden2yov1uljzmq9rgjc9vtgy5gltgqe
+            <div className='bg-[#022405] w-full md:w-[550px] h-[50px] mt-16 flex items-center justify-center text-center'>
+               <p className='text-[15px] md:text-[27px]'>
+                  frcfshgo8ytbuden2yov1uljzmq9rgjc9vtgy5gltgqe
                </p>
             </div>
 
@@ -115,7 +115,7 @@ export default function Home() {
                      <Link
                         href='https://raydium.io/'
                         target='_blank'
-                        className='relative bg-[#079117] text-white px-10 py-0.5 transition border-2 border-transparent 
+                        className='relative bg-[#079117] text-white text-[28px] px-10 py-0.5 transition border-2 border-transparent 
                         before:absolute before:inset-0 before:border-2 before:border-[#00c817] before:blur-sm before:opacity-0 
                         hover:before:opacity-100 hover:bg-[#00c817]'
                      >
@@ -185,7 +185,7 @@ export default function Home() {
                      <Link
                         href='https://phantom.app/'
                         target='_blank'
-                        className='relative bg-[#079117] text-white px-10 py-0.5 transition border-2 border-transparent 
+                        className='relative bg-[#079117] text-white text-[28px] px-10 py-0.5 transition border-2 border-transparent 
                         before:absolute before:inset-0 before:border-2 before:border-[#00c817] before:blur-sm before:opacity-0 
                         hover:before:opacity-100 hover:bg-[#00c817]'
                      >
@@ -194,7 +194,7 @@ export default function Home() {
                      <Link
                         href='https://raydium.io/'
                         target='_blank'
-                        className='relative bg-[#079117] text-white px-10 py-0.5 transition border-2 border-transparent 
+                        className='relative bg-[#079117] text-white text-[28px] px-10 py-0.5 transition border-2 border-transparent 
                         before:absolute before:inset-0 before:border-2 before:border-[#00c817] before:blur-sm before:opacity-0 
                         hover:before:opacity-100 hover:bg-[#00c817]'
                      >
