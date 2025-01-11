@@ -87,7 +87,7 @@ export default function Home() {
                <ChatComponent />
             </div>
 
-            <div className='bg-[#079117] w-full md:w-[550px] h-[50px] mt-16 flex items-center justify-center text-center'>
+            <div className='bg-[#079117] w-full md:w-[580px] h-[50px] mt-16 flex items-center justify-center text-center'>
                <p className='text-[15px] md:text-[27px]'>
                   rcRybMHUKMQNDHZpJeXJCAMkd5XkuHHFWgjDi53pump
                </p>
