@@ -1,9 +1,10 @@
 import { useRef, useState } from 'react';
 
-const Popup = () => {
+const Popup = ({ setIsPlayMusic }) => {
    const [isOpen, setIsOpen] = useState(true);
 
    const handleClick = () => {
+      setIsPlayMusic(true);
       setIsOpen(false);
    };
 

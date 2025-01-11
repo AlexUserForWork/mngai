@@ -1,10 +1,11 @@
 'use client';
 import Image from 'next/image';
-import { useState, useEffect, useRef } from 'react';
+import { useEffect, useState } from 'react';
 import ChatComponent from './ChatComponent';
 import Navbar from './NavBar';
 import Link from 'next/link';
 import Popup from './Popup';
+import { MusicButton } from './MusicButton';
 
 const icons = [
    { img: 'ico_1', url: 'https://t.me' },
@@ -14,9 +15,25 @@ const icons = [
 ];
 
 export default function Home() {
+   const [isPlayMusic, setIsPlayMusic] = useState(false);
+
+   const [audio, setAudio] = useState(null);
+
+   useEffect(() => {
+      if (typeof window !== 'undefined') {
+         const audioInstance = new Audio('/media/312312.mp3'); // Загружаем аудиофайл
+         setAudio(audioInstance);
+      }
+   }, []);
+
    return (
       <div className='flex items-center justify-center font-[Delicious]'>
-         <Popup />
+         <MusicButton
+            isPlayMusic={isPlayMusic}
+            setIsPlayMusic={setIsPlayMusic}
+            audio={audio}
+         />
+         <Popup setIsPlayMusic={setIsPlayMusic}/>
          <div className='w-full max-w-[1280px] font-[edo] flex flex-col items-center justify-center'>
             <Navbar />
             <Image
