@@ -50,14 +50,14 @@ export default function Home() {
 
                <div className='max-w-[560px]'>
                   <p className='text-[24px] flex items-center justify-center leading-none'>
-                     Truth Terminal Hentai
+                     Truth Terminal MANGAI
                      <span className='text-[32px] font-[Delicious] mx-2 flex items-center'>
                         |
                      </span>
                      <span className='text-[36px] font-[Delicious] flex items-center relative top-[-2px]'>
                         $
                      </span>
-                     HENTAI
+                     MANGAI
                   </p>
 
                   <div className='flex gap-2 items-center justify-center mt-4'>
@@ -168,9 +168,9 @@ export default function Home() {
                      transfer the SOL to your Solana wallet.
                      <br />
                      <br />
-                     Exchanging for $HENTAI on Raydium: Visit Raydium and
+                     Exchanging for $MANGAI on Raydium: Visit Raydium and
                      connect your Phantom wallet. Use the swap feature on
-                     Raydium to exchange your SOL for $HENTAI tokens.
+                     Raydium to exchange your SOL for $MANGAI tokens.
                   </p>
 
                   {/* Кнопки */}

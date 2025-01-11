@@ -8,7 +8,7 @@ export default function Navbar() {
    const [menuOpen, setMenuOpen] = useState(false);
 
    return (
-      <header className='w-full h-full flex justify-between items-center mx-auto px-4 md:px-6 border border-[#03cd1b]'>
+      <header className='mt-6 w-full h-full flex justify-between items-center mx-auto px-4 md:px-6 border border-[#03cd1b]'>
          <Link href='/' className='w-15'>
             <Image
                src='/images/11.jpg'

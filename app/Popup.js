@@ -19,7 +19,7 @@ const Popup = ({ setIsPlayMusic }) => {
                   onClick={handleClick}
                >
                   <h1 className='text-5xl font-extrabold'>
-                     CLICK TO ENTER $HENTAI
+                     CLICK TO ENTER $MANGAI
                   </h1>
                </div>
             </div>
