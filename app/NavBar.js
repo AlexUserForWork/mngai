@@ -9,7 +9,7 @@ export default function Navbar() {
 
    return (
       <header className='mt-6 w-full h-full flex justify-between items-center mx-auto px-4 md:px-6 border border-[#03cd1b]'>
-         <Link href='/' className='w-15'>
+         <Link href='/' className='w-15 p-4'>
             <Image
                src='/images/11.jpg'
                alt='Logo'
@@ -42,7 +42,9 @@ export default function Navbar() {
             <Link
                href='https://raydium.io/'
                target='_blank'
-               className='bg-[#079117] text-white px-10 py-.5 hover:bg-[green] transition'
+               className="relative bg-[#079117] text-white px-10 py-0.5 transition border-2 border-transparent 
+               before:absolute before:inset-0 before:border-2 before:border-[#00c817] before:blur-sm before:opacity-0 
+               hover:before:opacity-100 hover:bg-[#00c817]"
             >
                Buy $MANGAI
             </Link>

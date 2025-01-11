@@ -27,14 +27,14 @@ export default function Home() {
    }, []);
 
    return (
-      <div className='flex items-center justify-center font-[Delicious]'>
+      <div className='flex items-center justify-center font-[Bonzai]'>
          <MusicButton
             isPlayMusic={isPlayMusic}
             setIsPlayMusic={setIsPlayMusic}
             audio={audio}
          />
          <Popup setIsPlayMusic={setIsPlayMusic} />
-         <div className='w-full max-w-[1280px] font-[edo] flex flex-col items-center justify-center'>
+         <div className='w-full max-w-[1280px] font-[Bonzai] flex flex-col items-center justify-center'>
             <Navbar />
             <Image
                src='/images/main.gif'
@@ -50,14 +50,14 @@ export default function Home() {
 
                <div className='max-w-[560px]'>
                   <p className='text-[24px] flex items-center justify-center leading-none'>
-                     Truth Terminal MANGAI
-                     <span className='text-[32px] font-[Delicious] mx-2 flex items-center'>
+                     Truth Terminal MANGAI | $MANGAI
+                     {/* <span className='text-[32px] font-[Delicious] mx-2 flex items-center'>
                         |
                      </span>
                      <span className='text-[36px] font-[Delicious] flex items-center relative top-[-2px]'>
                         $
-                     </span>
-                     MANGAI
+                     </span> */}
+                    
                   </p>
 
                   <div className='flex gap-2 items-center justify-center mt-4'>
@@ -90,11 +90,11 @@ export default function Home() {
 
             <div id='about' className='flex flex-col gap-8 mt-24'>
                <p className='text-[36px] flex items-center justify-center leading-none'>
-                  About
-                  <span className='pl-2 text-[48px] font-[Delicious] flex items-center relative top-[-2px]'>
+                  About $MANGAI
+                  {/* <span className='pl-2 text-[48px] font-[Delicious] flex items-center relative top-[-2px]'>
                      $
-                  </span>
-                  MANGAI
+                  </span> */}
+                  
                </p>
             </div>
             <div className='flex flex-col md:flex-row w-full mt-4'>
@@ -106,7 +106,9 @@ export default function Home() {
                      <Link
                         href='https://raydium.io/'
                         target='_blank'
-                        className='bg-[#079117] text-white px-10 py-2 hover:bg-[green] transition'
+                        className="relative bg-[#079117] text-white px-10 py-0.5 transition border-2 border-transparent 
+                        before:absolute before:inset-0 before:border-2 before:border-[#00c817] before:blur-sm before:opacity-0 
+                        hover:before:opacity-100 hover:bg-[#00c817]"
                      >
                         Buy $MANGAI
                      </Link>
@@ -148,13 +150,13 @@ export default function Home() {
                <div className='w-full lg:w-1/2 text-center p-6 mx-auto lg:mx-0'>
                   <h2
                      id='how-to-buy'
-                     className='text-2xl md:text-3xl font-bold text-white'
+                     className='text-3xl md:text-5xl font-bold text-white'
                   >
-                     How to buy{' '}
-                     <span className='text-[40px] font-[Delicious]'>$</span>
-                     MANGAI
+                     How to buy $MANGAI
+                     {/* <span className='text-[40px]'>$</span> */}
+                   
                   </h2>
-                  <p className='font-[Delicious] text-[18px] text-white mt-4  font-normal'>
+                  <p className='text-[23px] text-white mt-4  font-normal'>
                      Setting Up a Phantom Wallet: First, choose and install the
                      Phantom wallet. Once installed, create your wallet and
                      securely store your private key or seed phrase.
@@ -175,14 +177,18 @@ export default function Home() {
                      <Link
                         href='https://phantom.app/'
                         target='_blank'
-                        className='bg-[#079117] text-white px-10 py-2 hover:bg-green-600 transition'
+                        className="relative bg-[#079117] text-white px-10 py-0.5 transition border-2 border-transparent 
+                        before:absolute before:inset-0 before:border-2 before:border-[#00c817] before:blur-sm before:opacity-0 
+                        hover:before:opacity-100 hover:bg-[#00c817]"
                      >
                         Get Phantom
                      </Link>
                      <Link
                         href='https://raydium.io/'
                         target='_blank'
-                        className='bg-[#079117] text-white px-10 py-2 hover:bg-green-600 transition'
+                        className="relative bg-[#079117] text-white px-10 py-0.5 transition border-2 border-transparent 
+                        before:absolute before:inset-0 before:border-2 before:border-[#00c817] before:blur-sm before:opacity-0 
+                        hover:before:opacity-100 hover:bg-[#00c817]"
                      >
                         Go Raydium
                      </Link>

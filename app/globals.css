@@ -2,36 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face {
-  font-family: 'Edo';
-  src: url('/fonts/edo.ttf') format('truetype');
-  font-weight: 400 900;
-  font-style: normal;
+   font-family: 'Edo';
+   src: url('/fonts/edo.ttf') format('truetype');
+   font-weight: 400 900;
+   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Delicious';
-  src: url('/fonts/DeliciousHandrawn-Regular.ttf') format('truetype');
-  font-weight: 400 900;
-  font-style: normal;
+   font-family: 'Delicious';
+   src: url('/fonts/DeliciousHandrawn-Regular.ttf') format('truetype');
+   font-weight: 400 900;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Shining';
+   src: url('/fonts/Shining Monday.otf') format('opentype');
+   font-weight: 400 900;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Bonzai';
+   src: url('/fonts/Bonzai.ttf') format('truetype');
+   font-weight: 400 900;
+   font-style: normal;
 }
 
 :root {
-  --background: #000000;
-  --foreground: #ededed;
+   --background: #000000;
+   --foreground: #ededed;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #000000;
-    --foreground: #ededed;
-  }
+   :root {
+      --background: #000000;
+      --foreground: #ededed;
+   }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: 'Orbitron', sans-serif;
+   color: var(--foreground);
+   background: var(--background);
+   font-family: 'Orbitron', sans-serif;
 }
-
