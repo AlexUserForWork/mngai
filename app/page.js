@@ -119,7 +119,7 @@ export default function Home() {
                   </div>
                   <div className='mt-8 mx-auto md:mx-0'>
                      <Link
-                        href='https://raydium.io/'
+                        href='https://raydium.io/swap/?inputMint=sol&outputMint=rcRybMHUKMQNDHZpJeXJCAMkd5XkuHHFWgjDi53pump'
                         target='_blank'
                         className='relative bg-[#079117] text-white text-[28px] px-10 py-0.5 transition border-2 border-transparent 
                         before:absolute before:inset-0 before:border-2 before:border-[#00c817] before:blur-sm before:opacity-0 
