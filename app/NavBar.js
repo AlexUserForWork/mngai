@@ -42,7 +42,7 @@ export default function Navbar() {
             <Link
                href='https://raydium.io/'
                target='_blank'
-               className="relative bg-[#079117] text-white px-10 py-0.5 transition border-2 border-transparent 
+               className="relative bg-[#079117] text-white text-[28px] px-10 py-0.5 transition border-2 border-transparent 
                before:absolute before:inset-0 before:border-2 before:border-[#00c817] before:blur-sm before:opacity-0 
                hover:before:opacity-100 hover:bg-[#00c817]"
             >

@@ -19,7 +19,7 @@ export const Footer = () => {
                </Link>
             ))}
          </div>
-         <div className='text-2xl mt-2'>$MANGAI 2025 @ Copyrights reserved</div>
+         <div className='text-2xl mt-2'>$MANGAI 2025 © Copyrights reserved</div>
       </div>
    );
 };

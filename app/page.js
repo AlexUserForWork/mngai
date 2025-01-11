@@ -47,11 +47,16 @@ export default function Home() {
             />
 
             <div className='flex flex-col gap-6 text-center mt-12'>
-               <h2 className='text-[48px]'>TRUTH TERMINALS MANGAI</h2>
+               <h2
+                  data-text='MANGAI WORLD'
+                  className='main-anim-text text-[32px] md:text-[48px]'
+               >
+                  MANGAI WORLD
+               </h2>
 
                <div className='max-w-[560px]'>
                   <p className='text-[24px] flex items-center justify-center leading-none'>
-                     Truth Terminal MANGAI | $MANGAI
+                     AI AGENT | $MANGAI
                      {/* <span className='text-[32px] font-[Delicious] mx-2 flex items-center'>
                         |
                      </span>
@@ -89,11 +94,11 @@ export default function Home() {
             </div>
 
             <div id='about' className='flex flex-col gap-8 mt-24'>
-               <p className='text-[36px] flex items-center justify-center leading-none'>
+               <p
+                  data-text='About $MANGAI'
+                  className='main-anim-text text-[42px] flex items-center justify-center leading-none'
+               >
                   About $MANGAI
-                  {/* <span className='pl-2 text-[48px] font-[Delicious] flex items-center relative top-[-2px]'>
-                     $
-                  </span> */}
                </p>
             </div>
             <div className='flex flex-col md:flex-row w-full mt-4'>
@@ -138,7 +143,12 @@ export default function Home() {
             </div>
 
             <div id='tokenomics' className='w-full mt-24 flex flex-col '>
-               <h2 className='text-[36px] block mx-auto'>Tokenomics</h2>
+               <h2
+                  data-text='Tokenomics'
+                  className='main-anim-text text-[48px] block mx-auto'
+               >
+                  Tokenomics
+               </h2>
 
                <div className='flex flex-col lg:flex-row gap-8 mt-4'>
                   <Image
@@ -150,7 +160,35 @@ export default function Home() {
                      height={600}
                   />
                   <div className='mx-auto bg-[#022405] border border-[#03cd1b] rounded p-4 w-full max-w-[90%] text-white break-words h-[350px]'>
-                     123123123123123123123123123123123123123123123123123123123123123123123123
+                     <div class='flex flex-col items-center justify-center text-white space-y-2'>
+                        <div class='text-xl md:text-3xl font-semibold'>
+                           1 BILLION SUPPLY
+                        </div>
+                        <div class='text-md md:text-xl'>
+                           Total supply is capped at 1 billion tokens.
+                        </div>
+
+                        <div class='text-xl md:text-3xl  font-semibold'>
+                           MINT REVOKED
+                        </div>
+                        <div class='text-md md:text-xl'>
+                           Minting of new tokens has been permanently revoked.
+                        </div>
+
+                        <div class='text-xl md:text-3xl  font-semibold'>
+                           0% TAXES
+                        </div>
+                        <div class='text-md md:text-xl'>
+                           No tax on transactions, making it tax-friendly.
+                        </div>
+
+                        <div class='text-xl md:text-3xl  font-semibold'>
+                           LP BURNED
+                        </div>
+                        <div class='text-md md:text-xl'>
+                           Liquidity pool tokens have been burned for security.
+                        </div>
+                     </div>
                   </div>
                </div>
             </div>
@@ -160,13 +198,14 @@ export default function Home() {
                <div className='w-full lg:w-1/2 text-center p-6 mx-auto lg:mx-0'>
                   <h2
                      id='how-to-buy'
-                     className='text-3xl md:text-5xl font-bold text-white'
+                     data-text='How to buy $MANGAI'
+                     className='main-anim-text text-3xl md:text-5xl font-bold text-white'
                   >
                      How to buy $MANGAI
                      {/* <span className='text-[40px]'>$</span> */}
                   </h2>
                   <p className='text-[23px] text-white mt-4  font-normal'>
-                     Setting Up a Phantom Wallet: First, choose and install the
+                     Setting Up a Phantom Wallet First, choose and install the
                      Phantom wallet. Once installed, create your wallet and
                      securely store your private key or seed phrase.
                      <br />

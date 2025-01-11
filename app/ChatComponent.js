@@ -110,7 +110,7 @@ const ChatComponent = () => {
                   {/* Иконка пользователя */}
                   {entry.isUser ? (
                      <div className='w-6 h-6 rounded-full bg-gray-600 flex items-center justify-center flex-shrink-0'>
-                        <span className='text-white text-xs'>U</span>
+                        <span className='text-white text-[18px]'>U</span>
                      </div>
                   ) : (
                      <div className='w-10 h-10 rounded-full overflow-hidden relative flex-shrink-0'>
@@ -127,7 +127,7 @@ const ChatComponent = () => {
 
                   {/* Сообщение */}
                   <div
-                     className={`flex-1 break-words whitespace-pre-wrap [overflow-wrap:anywhere] border rounded  ${
+                     className={`flex-1 break-words whitespace-pre-wrap [overflow-wrap:anywhere] border rounded text-[18px]  ${
                         entry.isUser ? "text-white border-[#FFFFFF] px-2 z-20 bg-gray-800 bg-opacity-25 z-50"
                         : 'text-[#4AFF91] border-[#4AFF91] px-2 z-20 bg-green-800 bg-opacity-25 z-50'
                      }`}

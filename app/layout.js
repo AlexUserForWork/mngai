@@ -2,7 +2,7 @@ import './globals.css';
 
 export const metadata = {
    title: '$MANGAI',
-   description: 'TRUTH TERMINALS MANGAI'
+   description: 'TMANGAI WORLD'
 };
 
 export default function RootLayout({ children }) {
