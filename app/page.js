@@ -9,8 +9,8 @@ import { MusicButton } from './MusicButton';
 import { Footer } from './Footer';
 
 export const icons = [
-   { img: 'ico_1', url: 'https://t.me' },
-   { img: 'ico_2', url: 'https://x.com' },
+   { img: 'ico_1', url: 'https://t.me/AgentMangAI' },
+   { img: 'ico_2', url: 'https://x.com/AgentMangAI' },
    { img: 'ico_3', url: 'https://www.dextools.io/app/en/' },
    { img: 'ico_4', url: 'https://dexscreener.com/solana/' }
 ];
