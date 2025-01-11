@@ -6,8 +6,9 @@ import Navbar from './NavBar';
 import Link from 'next/link';
 import Popup from './Popup';
 import { MusicButton } from './MusicButton';
+import { Footer } from './Footer';
 
-const icons = [
+export const icons = [
    { img: 'ico_1', url: 'https://t.me' },
    { img: 'ico_2', url: 'https://x.com' },
    { img: 'ico_3', url: 'https://www.dextools.io/app/en/' },
@@ -81,7 +82,7 @@ export default function Home() {
                <ChatComponent />
             </div>
 
-            <div className='bg-[#022405] w-full md:w-[550px] h-[50px] mt-16 flex items-center justify-center text-center'>
+            <div className='bg-[#079117] w-full md:w-[550px] h-[50px] mt-16 flex items-center justify-center text-center'>
                <p className='text-[15px] md:text-[27px]'>
                   frcfshgo8ytbuden2yov1uljzmq9rgjc9vtgy5gltgqe
                </p>
@@ -215,7 +216,9 @@ export default function Home() {
                </div>
             </div>
 
-            <div className='mt-24'>FOOTER TODO !!!</div>
+            <div className='mt-24 w-screen bg-black border-t border-green-900 overflow-x-hidden '>
+               <Footer />
+            </div>
          </div>
       </div>
    );
